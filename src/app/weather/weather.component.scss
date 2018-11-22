@@ -1,0 +1,59 @@
+.block-weather {
+    background: #5fb3f9;
+    width: 250px;
+    height: 195px;
+    border-radius: 6px;
+    margin-left: 30px;
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+img {
+    width: 50px;
+}
+
+span {
+    font-size: 60px;
+}
+
+.line {
+    width: 135px;
+    height: 2px;
+    margin: auto;
+    background: white;
+    margin-bottom: 10px;
+}
+
+.loading {
+    margin-top: 97.5px;
+    font-size: 20px;
+}
+
+.preolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 8px solid white;
+    border-radius: 50%;
+    border-top-color: #313144;
+    transition: 1s all;
+    animation: 1s spin infinite linear;
+    margin-top: 8%;
+    margin-left: 40%;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50px, 50px) rotate(0deg);
+    }
+    to {
+        transform: translate(-50px, 50px) rotate(360deg);
+    }
+}

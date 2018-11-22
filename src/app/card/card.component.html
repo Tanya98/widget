@@ -1,0 +1,37 @@
+<div class="block-elements">
+  <div class="card">
+    <img [src]="bg_image" class="img-card">
+
+    <app-menu [ngStyle]="{'background':'#fda660' }" (typeChanged)="navClick($event)"></app-menu>
+
+    <div class="block-bottom">
+      <h4>Righteous indignation & like</h4>
+      <div class="scrollbar" id="style-1">
+        <ng-container *ngIf="data$ | async as data; else preolder">
+          <ng-container *ngFor="let card of sortedByType | filterPipe : filterType">
+            <div class="info" (click)="clicked(card)">
+              <div class="activity-list">
+                <p class="name">{{card.title}}</p>
+                <p class="address">{{card.address}}</p>
+                <p class="phone">{{card.phone | transformNumber}}</p>
+              </div>
+              <div class="activity-img">
+                <img [src]="card.img" class="img-avatar">
+                <img [src]="card.img2" class="img-avatar">
+              </div>
+            </div>
+          </ng-container>
+        </ng-container>
+        <ng-template #preolder>
+          <div class="preolder">
+            <div id="page-loader" class="loader"></div>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="block-info">
+    <app-weather [weather]='selected.weather'></app-weather>
+    <app-social [social]='selected.social_info'></app-social>
+  </div>
+</div>

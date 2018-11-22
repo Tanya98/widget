@@ -1,0 +1,147 @@
+.block-elements {
+    display: flex;
+    justify-content: center;
+}
+
+.block-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    max-width: 340px;
+    max-height: 453px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-card {
+    width: 100%;
+    height: 190px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+// .nav {
+//     width: 100%;
+//     background: #fda660;
+// }
+
+// ul {
+//     list-style: none;
+//     display: flex;
+//     justify-content: center;
+//     padding: 0;
+// }
+
+// li {
+//     padding: 0px 25px;
+//     border-right: 1px solid white;
+//     color: white;
+//     &:last-child {
+//         border-right: none;
+//     }
+//     &:hover {
+//         color: black;
+//         font-weight: 500;
+//         transition: all 0.7s;
+//     }
+// }
+
+h4 {
+    text-align: center;
+}
+
+.block-bottom {
+    background: white;
+    padding-bottom: 15px;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    height: 150px;
+    margin-right: 20px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+#style-1::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #e6e3e3;
+}
+
+#style-1::-webkit-scrollbar {
+    width: 5px;
+}
+
+#style-1::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    height: 53px;
+    background-color: #fda660;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.activity-list {
+    width: 130px;
+}
+
+.activity-img {
+    margin-top: 15px;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.address {
+    font-weight: 500;
+    color: gray;
+}
+
+.phone {
+    color: deeppink;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.img-avatar {
+    width: 50px;
+    border-radius: 50%;
+    height: 45px;
+    margin: 0px 5px;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.preolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 8px solid #313144;
+    border-radius: 50%;
+    border-top-color: #fda660;
+    transition: 1s all;
+    animation: 1s spin infinite linear;
+    margin-top: -5%;
+    margin-left: 40%;
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50px, 50px) rotate(0deg);
+    }
+    to {
+        transform: translate(-50px, 50px) rotate(360deg);
+    }
+}

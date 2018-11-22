@@ -1,0 +1,7 @@
+<div class="nav">
+  <ul>
+    <li *ngFor="let item of items">
+      <a (click)="navClick(item.type)">{{item.type | transformString}}</a>
+    </li>
+  </ul>
+</div>
