@@ -1,1 +1,1 @@
-angular app
+Widgets-app with using angular
